@@ -1,0 +1,332 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f12618b77dbb187071ec14d88a84b61d",
+    "packages": [
+        {
+            "name": "syntaxx/phpx-framework",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Syntaxx-HQ/PHPX-Framework.git",
+                "reference": "7ead3b720a1d19d0e6229c1dc996e650d509f3de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Syntaxx-HQ/PHPX-Framework/zipball/7ead3b720a1d19d0e6229c1dc996e650d509f3de",
+                "reference": "7ead3b720a1d19d0e6229c1dc996e650d509f3de",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/useState.php"
+                ],
+                "psr-4": {
+                    "Syntaxx\\PHPX\\Framework\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHPX Framework - A modern PHP framework with JSX-like syntax support",
+            "support": {
+                "issues": "https://github.com/Syntaxx-HQ/PHPX-Framework/issues",
+                "source": "https://github.com/Syntaxx-HQ/PHPX-Framework/tree/v0.1.0"
+            },
+            "time": "2025-10-26T21:14:28+00:00"
+        },
+        {
+            "name": "syntaxx/wasm-php-runtime-vrzno",
+            "version": "v8.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Syntaxx-HQ/PHPX-WasmPHPRuntimeVrzno.git",
+                "reference": "6ba60df001006b73687940747dc1fdd186a718f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Syntaxx-HQ/PHPX-WasmPHPRuntimeVrzno/zipball/6ba60df001006b73687940747dc1fdd186a718f0",
+                "reference": "6ba60df001006b73687940747dc1fdd186a718f0",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Syntaxx\\PhpWasm\\Plugin",
+                "php-wasm": {
+                    "target-dir": "public/wasm"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Syntaxx\\PhpWasm\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Prebuilt PHP WebAssembly runtime (php.wasm + php.js)",
+            "support": {
+                "issues": "https://github.com/Syntaxx-HQ/PHPX-WasmPHPRuntimeVrzno/issues",
+                "source": "https://github.com/Syntaxx-HQ/PHPX-WasmPHPRuntimeVrzno/tree/v8.3.0"
+            },
+            "time": "2025-05-28T18:11:50+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "syntaxx/lz4",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Syntaxx-HQ/PHPX-Lz4.git",
+                "reference": "f8e11ff917bfd4a0e5842d355020a562b395ce4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Syntaxx-HQ/PHPX-Lz4/zipball/f8e11ff917bfd4a0e5842d355020a562b395ce4a",
+                "reference": "f8e11ff917bfd4a0e5842d355020a562b395ce4a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "slevomat/coding-standard": "^8.0",
+                "squizlabs/php_codesniffer": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Syntaxx\\LZ4\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A pure PHP implementation of LZ4 compression and decompression",
+            "keywords": [
+                "compression",
+                "decompression",
+                "lz4"
+            ],
+            "support": {
+                "issues": "https://github.com/Syntaxx-HQ/PHPX-Lz4/issues",
+                "source": "https://github.com/Syntaxx-HQ/PHPX-Lz4/tree/v0.1.0"
+            },
+            "time": "2025-05-17T14:28:06+00:00"
+        },
+        {
+            "name": "syntaxx/phpx-build-tools",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Syntaxx-HQ/PHPX-BuildTools.git",
+                "reference": "47398e11f52e5fc734e9d0e671933ed06fafd5ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Syntaxx-HQ/PHPX-BuildTools/zipball/47398e11f52e5fc734e9d0e671933ed06fafd5ca",
+                "reference": "47398e11f52e5fc734e9d0e671933ed06fafd5ca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.3",
+                "syntaxx/phpx-compiler": "^0.1",
+                "syntaxx/webassembly-packer": "^0.1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "bin": [
+                "bin/phpx-build"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Syntaxx\\PHPX\\BuildTools\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bohuslav Simek",
+                    "email": "bohuslav@simek.si"
+                }
+            ],
+            "description": "Build tools for PHPX WebAssembly projects",
+            "keywords": [
+                "build-tools",
+                "bundler",
+                "phpx",
+                "wasm",
+                "webassembly"
+            ],
+            "support": {
+                "issues": "https://github.com/Syntaxx-HQ/PHPX-BuildTools/issues",
+                "source": "https://github.com/Syntaxx-HQ/PHPX-BuildTools/tree/v0.2.0"
+            },
+            "time": "2025-11-02T10:38:01+00:00"
+        },
+        {
+            "name": "syntaxx/phpx-compiler",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Syntaxx-HQ/PHPX-Compiler.git",
+                "reference": "033be501a36b34d8af87b92a0e8398a27cfbbe09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Syntaxx-HQ/PHPX-Compiler/zipball/033be501a36b34d8af87b92a0e8398a27cfbbe09",
+                "reference": "033be501a36b34d8af87b92a0e8398a27cfbbe09",
+                "shasum": ""
+            },
+            "require": {
+                "syntaxx/phpx-parser": "^5.4.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Syntaxx\\PHPX\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "JSX-like syntax for PHP with WebAssembly and SSR support",
+            "support": {
+                "issues": "https://github.com/Syntaxx-HQ/PHPX-Compiler/issues",
+                "source": "https://github.com/Syntaxx-HQ/PHPX-Compiler/tree/v0.1.0"
+            },
+            "time": "2025-10-26T21:06:25+00:00"
+        },
+        {
+            "name": "syntaxx/phpx-parser",
+            "version": "v5.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kambo-1st/PHP-X-Parser.git",
+                "reference": "81e506fb2817061fcf74f8ae78c1d71a3e7d6d4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kambo-1st/PHP-X-Parser/zipball/81e506fb2817061fcf74f8ae78c1d71a3e7d6d4b",
+                "reference": "81e506fb2817061fcf74f8ae78c1d71a3e7d6d4b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "ircmaxell/php-yacc": "^0.0.7",
+                "phpunit/phpunit": "^9.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHPX parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "support": {
+                "source": "https://github.com/kambo-1st/PHP-X-Parser/tree/v5.4.2"
+            },
+            "time": "2025-10-26T20:55:39+00:00"
+        },
+        {
+            "name": "syntaxx/webassembly-packer",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Syntaxx-HQ/PHPX-WebAssemblyPacker.git",
+                "reference": "73b981bdfe102084892104200390c135c2eb13f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Syntaxx-HQ/PHPX-WebAssemblyPacker/zipball/73b981bdfe102084892104200390c135c2eb13f6",
+                "reference": "73b981bdfe102084892104200390c135c2eb13f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "syntaxx/lz4": "0.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "symfony/process": "^6.0"
+            },
+            "bin": [
+                "bin/file-packager"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Tests\\": "tests/",
+                    "Syntaxx\\WebAssemblyPacker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "WebAssembly file packager with LZ4 compression support",
+            "support": {
+                "issues": "https://github.com/Syntaxx-HQ/PHPX-WebAssemblyPacker/issues",
+                "source": "https://github.com/Syntaxx-HQ/PHPX-WebAssemblyPacker/tree/v0.1.3"
+            },
+            "time": "2025-10-26T20:20:47+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.4"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

@@ -1,0 +1,37 @@
+<?php
+
+namespace Syntaxx\PHPX\Demo;
+
+use Syntaxx\PHPX\Framework\Component;
+use Syntaxx\PHPX\Framework\Runtime;
+use Syntaxx\PHPX\Framework\Document;
+
+function MyApp() {
+    return (
+        <div>
+            <h1>Click to increment</h1>
+            <MyButton />
+        </div>
+    );
+}
+
+function MyButton() {
+    [$count, $setCount] = useState(0);
+
+    $handleClick = function() use ($count, $setCount) {
+        $setCount($count + 1);
+    };
+
+    return (
+        <button onClick={$handleClick}>
+            Count: {$count}
+        </button>
+    );
+}
+
+$root = Runtime::createRoot(Document::document()->getElementById('root'));
+$root->render(
+    Component::create("StrictMode", [], [
+        Component::create("MyApp", [], [])
+    ])
+);

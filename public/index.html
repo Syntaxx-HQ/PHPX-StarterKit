@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Initial template</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/a11y-light.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <h1>PHPX Interactive Demo</h1>
+            </div>
+        </header>
+    
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    Simple example
+                </div>
+                <div class="card-body">
+                    <div id="root"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="module">
+            import php from "./build/php-vrzno-web.mjs";
+
+            document.addEventListener('DOMContentLoaded', async () => {
+                const buffer = [];
+                const {ccall, FS} = await php({})
+                ccall('phpw_with_args_keepalive', 'string', [
+                'string', 'string', 'string'
+                ], ['/app/bootstrap.php']);
+                window.php = php;
+            });
+        </script>
+    </body>
+</html>
