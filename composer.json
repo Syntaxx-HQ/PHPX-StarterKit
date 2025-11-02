@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=8.4",
+        "php": ">=8.3",
         "syntaxx/wasm-php-runtime-vrzno": "8.3.0",
         "syntaxx/phpx-framework": "^0.1.0"
     },
