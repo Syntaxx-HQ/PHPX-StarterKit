@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f12618b77dbb187071ec14d88a84b61d",
+    "content-hash": "f3fa231957f0cade2532ec791bbfb64e",
     "packages": [
         {
             "name": "syntaxx/phpx-framework",
-            "version": "v0.1.0",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Syntaxx-HQ/PHPX-Framework.git",
-                "reference": "7ead3b720a1d19d0e6229c1dc996e650d509f3de"
+                "reference": "3f0ab552ca2f97e5ee92ae2a463f21e52f21f7cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Syntaxx-HQ/PHPX-Framework/zipball/7ead3b720a1d19d0e6229c1dc996e650d509f3de",
-                "reference": "7ead3b720a1d19d0e6229c1dc996e650d509f3de",
+                "url": "https://api.github.com/repos/Syntaxx-HQ/PHPX-Framework/zipball/3f0ab552ca2f97e5ee92ae2a463f21e52f21f7cb",
+                "reference": "3f0ab552ca2f97e5ee92ae2a463f21e52f21f7cb",
                 "shasum": ""
             },
             "require-dev": {
@@ -39,9 +39,9 @@
             "description": "PHPX Framework - A modern PHP framework with JSX-like syntax support",
             "support": {
                 "issues": "https://github.com/Syntaxx-HQ/PHPX-Framework/issues",
-                "source": "https://github.com/Syntaxx-HQ/PHPX-Framework/tree/v0.1.0"
+                "source": "https://github.com/Syntaxx-HQ/PHPX-Framework/tree/v0.2.0"
             },
-            "time": "2025-10-26T21:14:28+00:00"
+            "time": "2026-06-07T07:43:45+00:00"
         },
         {
             "name": "syntaxx/wasm-php-runtime-vrzno",
@@ -325,7 +325,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=8.4"
+        "php": ">=8.3"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
