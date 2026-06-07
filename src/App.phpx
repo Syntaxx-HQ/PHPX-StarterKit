@@ -5,6 +5,7 @@ namespace Syntaxx\PHPX\Demo;
 use Syntaxx\PHPX\Framework\Component;
 use Syntaxx\PHPX\Framework\Runtime;
 use Syntaxx\PHPX\Framework\Document;
+use function Syntaxx\PHPX\Framework\useState;
 
 function MyApp() {
     return (
