@@ -7,7 +7,7 @@ use Syntaxx\PHPX\Framework\Runtime;
 use Syntaxx\PHPX\Framework\Browser;
 use function Syntaxx\PHPX\Framework\useState;
 
-function MyApp() {
+function App() {
     return (
         <div>
             <h1>Click to increment</h1>
@@ -30,9 +30,4 @@ function MyButton() {
     );
 }
 
-$root = Runtime::createRoot(Browser::document()->getElementById('root'));
-$root->render(
-    Component::create("StrictMode", [], [
-        Component::create("MyApp", [], [])
-    ])
-);
+Runtime::createRoot(Browser::document()->getElementById('root'))->render(<App />);
