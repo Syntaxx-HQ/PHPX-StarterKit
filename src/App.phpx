@@ -4,7 +4,7 @@ namespace Syntaxx\PHPX\Demo;
 
 use Syntaxx\PHPX\Framework\Component;
 use Syntaxx\PHPX\Framework\Runtime;
-use Syntaxx\PHPX\Framework\Document;
+use Syntaxx\PHPX\Framework\Browser;
 use function Syntaxx\PHPX\Framework\useState;
 
 function MyApp() {
@@ -30,7 +30,7 @@ function MyButton() {
     );
 }
 
-$root = Runtime::createRoot(Document::document()->getElementById('root'));
+$root = Runtime::createRoot(Browser::document()->getElementById('root'));
 $root->render(
     Component::create("StrictMode", [], [
         Component::create("MyApp", [], [])
